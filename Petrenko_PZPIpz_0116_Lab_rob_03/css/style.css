@@ -148,6 +148,20 @@ main section:not(:last-child) {
     padding-bottom: 40px;
 }
 
+.geo_button {
+    color: white;
+    width: 17%;
+    margin: 10px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #000000;
+    outline: none;
+}
+
+#map_div {
+    border: 2px solid black;
+}
+
 /* images, lists, table, forms */
 
 .images-wrapper {
