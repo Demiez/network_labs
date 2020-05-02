@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "Birch";
+    src: url("../fonts/BirchStd.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    background: #e7e7e7;
+}
+
+body * {box-sizing: border-box;}
+
+h1, h2, h3, p, ul, ol, dl {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* ### header ### */
+
+header {
+    background-color: #171616;
+    max-width: 100%;
+    padding: 11px 0 8px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo a {
+    font-family: "Birch";
+    font-size: 3.6em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: #b0b0b0;
+}
+
+.logo p {
+    font-size: 1.2em;
+    color: #686868;
+    line-height: 1px;
+    letter-spacing: 0.3px;
+}
+
+.search {
+    display: flex;
+    height: 27px;
+    width: 43.7%;
+}
+
+.search input[type=text], .search button[type=submit] {
+    border: 1px solid #4c4c4c;
+    height: inherit;
+    color: #ffffff;
+}
+
+.search input[type=text] {
+    width: 81%;
+    background: #323232;
+    box-shadow: inset 1px 3px 3px 0 rgba(0,0,0,0.75);
+}
+
+.search button[type=submit] {
+    width: 17%;
+    margin-left: 1.3%;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.search button[type=submit]:hover {
+    cursor: pointer;
+}
+
+.find {
+    max-width: 27px;
+    display: none;
+}
+/* ### big banner ### */
+
+.big-banner {
+    background: #000000;
+}
+
+.big-banner div {
+    position: relative;
+}
+
+.big-banner div > p {
+    background-color: rgba(0,0,0,0.5);
+    color: #dedede;
+    font-size: 1.2em;
+    padding: 16px 23px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ### navigation menu ### */
+
+#menu-checkbox, .mobile-menu {
+    display: none;
+}
+
+nav {
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-right: 1px solid #272727;
+}
+
+nav a:hover {
+    background: #aaaaaa;
+}
+
+/* ### main ### */
+
+h1, h2 {
+    color: #838383;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 30px 21px 41px 17px;
+    font-size: 1.3em;
+}
+
+main section:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+/* 1 section */
+
+main section:first-child p {
+    line-height: 1.7;
+}
+
+main section:first-child p a {
+    color: #0075d0;
+    text-decoration: none;
+    border-bottom: 2px solid #86b0e2;
+}
+
+main section:first-child p span {
+    font-style: italic;
+}
+
+/* images, lists, table, forms */
+
+.images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.images img {
+    border: 12px solid #e2e2e2;
+}
+
+ul, ol {
+    width: 45%;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #d5d5d5;
+}
+
+table th {
+    background-color: #efefef;
+    text-align: left;
+}
+
+.forms form input[type="text"], .forms form select  {
+    width: 100%;
+    max-width: 222px;
+    height: 30px;
+    padding-left: 8px;
+}
+
+.forms form select:hover {
+    cursor: pointer;
+}
+
+.forms form p:nth-of-type(n+2), .forms form div {
+    padding-top: 14px;
+}
+
+.forms form textarea {
+    height: 124px;
+    width: 100%;
+    max-width: 304px;
+    resize: none;
+}
+
+.forms button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 14px 25px;
+    border: none;
+    position: relative;
+    top: 16px;
+}
+
+.forms button:hover {
+    cursor: pointer;
+}
+
+/* ### footer ### */
+footer {
+    color: #656565;
+    font-size: 1.3em;
+    padding: 11px 0;
+}
+
+footer div p a {
+    color: #0075d0;
+    text-decoration: none;
+    border-bottom: 2px solid #86b0e2;
+}
+
+/* ### responsive ### */
+
+@media screen and (max-width: 900px) {
+    .search {
+        justify-content: flex-end;
+    }
+    .search button[type=submit] {
+        display: none;
+    }
+    .find {
+        display: block;
+    }
+    ul, ol {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    ul, ol {
+        width: 90%;
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .images-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .images img {
+        max-width: 50%;
+        border: 12px solid #e2e2e2;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        display: none;
+    }
+
+    .nav-wrapper {
+        background-color: #000000;
+        position: relative;
+    }
+
+    .mobile-menu {
+        display: inline-flex;
+        position: relative;
+        top: 100%;
+        left: 90%;
+        cursor: pointer;
+    }
+
+    input#menu-checkbox:checked + nav {
+        display: block;
+        position: absolute;
+        background-color: #000000;
+        top: 100%;
+        right: 0;
+    }
+    input#menu-checkbox:checked + nav a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    table, th, td, tr {
+        display: block;
+    }
+    table tr:nth-child(1) {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    table tr:nth-of-type(odd) {
+        background: #A5A5A5;
+    }
+    tr {
+        border: 1px solid rgba(30, 7, 0, 0.79);
+    }
+
+    td:nth-of-type(1):before { content: "Валюта:  "; }
+    td:nth-of-type(2):before { content: "Купівля:  "; }
+    td:nth-of-type(3):before { content: "Продаж:  "; }
+    td:nth-of-type(4):before { content: "Банк:  "; }
+}
+
+
+@media screen and (max-width: 300px) {
+    .mobile-menu {
+        left: 86%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .mobile-menu {
+        left: 84%;
+    }
+}
