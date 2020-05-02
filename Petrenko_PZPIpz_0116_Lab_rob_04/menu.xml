@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+
+<food category="soup">
+  <title lang="uk">Борщ</title>
+  <ingredients>Буряк, лук, картопля, м'ясо, бульйон</ingredients>
+  <price>75.00</price>
+</food>
+
+<food category="side_dish">
+  <title lang="uk">Рис із овочами</title>
+  <ingredients>Рис, овочі, масло</ingredients>
+  <price>40.00</price>
+</food>
+
+<food category="dessert">
+  <title lang="uk">Пиріг з яблуками</title>
+  <ingredients>Мучне тісто, яблука</ingredients>
+  <price>40.00</price>
+</food>
+
+<food category="drinks">
+  <title lang="uk">Узвар</title>
+  <ingredients>Кринична вода, сухофрукти</ingredients>
+  <price>35.00</price>
+</food>
+
+</menu>
