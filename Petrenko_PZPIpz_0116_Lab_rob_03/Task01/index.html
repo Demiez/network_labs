@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="News and facts">
+	<title>News and Facts</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="logo">
+					<a href="./index.html">News<span>and</span>Facts</a>
+					<p>Тільки свіжі новини і факти</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="nav-wrapper container">
+		<label for="menu-checkbox" class="mobile-menu">
+			<img src="./images/menu.svg" alt="Menu">
+		</label>
+		<input type="checkbox" id="menu-checkbox">
+		<nav>
+			<a href="./index.html">Головна</a>
+			<a href="./index.html">Новини</a>
+			<a href="./index.html">Валюта</a>
+			<a href="./index.html">Галерея</a>
+			<a href="./index.html">Контакти</a>
+		</nav>
+	</div>
+	<main class="container">
+		<section class="forms">
+			<h2>Завдання 2. Форма з використанням елементів:</h2>
+			<form>
+				<p>Ім'я:</p>
+				<input type="text" name="input" placeholder="Введіть своє ім'я">
+				<p>Мій email:</p>
+				<input type="email" name="email_input" placeholder="Введіть email" pattern=".+@gmail.com" size="30"
+					required>
+				<label for="phone" class="input_label">Введіть номер телефону:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+				<small>Формат вводу: 123-456-78-90</small>
+
+				<label for="meeting-time" class="input_label">Оберіть час для дзвінка:</label>
+				<input type="datetime-local" id="meeting-time" name="meeting-time" value="2020-05-02T15:30"
+					min="2020-06-02T00:00" max="2020-06-02T00:00">
+
+				<label for="url" class="input_label">Введіть адресу сайту:</label>
+				<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+					required>
+			</form>
+			<button type="submit">Відправити</button>
+		</section>
+		<section>
+			<h2>Завдання 3. Canvas:</h2>
+			<canvas id="canvas" width="500" height="500" style="border:2px solid #000000;">
+				<h2>Attention</h2>
+				Нажаль ваш браузер не підтримує HTML5 canvas.
+				Зайдіть на сторінку браузера та обновіть його.
+				<p>Тут повинна бути відображена активна зона для малювання</p>
+			</canvas>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&copy; NewsAndFacts <a href="">Ми на фейсбуку</a></p>
+		</div>
+	</footer>
+</body>
+	<script src="./script/canvas.js"></script>
+
+</html>
