@@ -167,8 +167,6 @@ class Circle extends Drawable {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
         ctx.closePath();
-        // ctx.strokeStyle = this.color;
-        // ctx.stroke();
         ctx.fillStyle = this.color;
         ctx.fill();
     }
@@ -257,18 +255,6 @@ class AimRectangle extends Drawable {
         ctx.stroke();
     }
 }
-// new Circle(30,30,10, "red")
-// new Circle(60,60,10, "red")
-// new Circle(90,90,10, "red")
-// new Line(0,0,100,100, "red")
-
-// canvas.onmousemove = (e) => {
-//     var x = e.clientX;     // Get the horizontal coordinate
-//     var y = e.clientY;
-//     // console.log(e.buttons.toString(2))
-//     // console.log(e.buttons & 0b010) // right button check
-//     (e.buttons & 1) && new Circle(x,y, +radius.value, color.value)
-// }
 
 
 
