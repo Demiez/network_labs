@@ -8,7 +8,7 @@ let inputs = [];
 const tools = {
     graffiti: {
         mousemove(e){
-            var x = e.clientX;     // Get the horizontal coordinate
+            var x = e.clientX;
             var y = e.clientY;
             (e.buttons & 1) && new Circle(x,y, +size.value, color.value)
         }
@@ -84,7 +84,6 @@ const tools = {
                 new AimRectangle(Drawable.prototype.target.x-2,Drawable.prototype.target.y-2, Drawable.prototype.target.width +4, Drawable.prototype.target.height +4, 'red')
             }
 
-            // new AimCircle(Drawable.prototype.target.x,Drawable.prototype.target.y, Drawable.prototype.target.radius + 3, 'red')
             console.log(Drawable.prototype.target);
             console.log(minDistance);
             console.log(Drawable.instances)
@@ -260,7 +259,6 @@ class AimRectangle extends Drawable {
 
 undo.onclick = function(){
     Drawable.instances.pop();
-    //Drawable.instances = []
     Drawable.drawAll()
 };
 
@@ -284,12 +282,3 @@ canvas.onmousemove = superHandler;
 canvas.onmouseup = superHandler;
 canvas.onmousedown = superHandler;
 canvas.onclick = superHandler;
-
-
-const jsonPost = (url, data) => {
-    return fetch (url, {
-        method: 'POST',
-        body: JSON.stringify(data)})
-        .then(response => response.json())
-        .catch(error => console.log(error + 'jsonPost failed'));
-};

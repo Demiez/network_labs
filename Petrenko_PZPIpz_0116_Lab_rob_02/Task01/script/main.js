@@ -359,7 +359,7 @@ let form  = new Form (formContainer, {
     "*name": 'Name',
     "*surname": 'Surname',
     "*password": '***',
-    "email": 'your email',
+    "email": '',
     married: true,
     "*birthday": new Date((new Date).getTime() - 86400000 * 30 * 365)
 }, () => console.log('ok'), () => console.log('All inputs are canceled.'));
